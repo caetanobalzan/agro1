@@ -1,0 +1,90 @@
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Container central para conteúdo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo para cada seção */
+section {
+    margin: 2rem 0;
+}
+
+/* Estilo para os títulos das seções */
+h2 {
+    color: #2e7d32;
+}
+
+/* Estilo para parágrafos */
+p {
+    line-height: 1.6;
+}
+
+/* Estilo para a seção de imagens */
+.images-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.images-section img {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo para a caixa de informações */
+.info-box {
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* Lista de universidades */
+.university-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.university-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #e8f5e9;
+}
