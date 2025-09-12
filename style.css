@@ -1,154 +1,98 @@
-/* Resetando margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fonte personalizada */
+/* Fonte Poppins para todo o site */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Estilos do cabeçalho */
 header {
-    background: linear-gradient(45deg, #4caf50, #2e7d32);
+    background-color: #2e7d32;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 5rem 1rem;
-    position: relative;
 }
 
-header h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
+.header-content h1 {
+    margin: 0;
     font-weight: 600;
 }
 
-header p {
-    font-size: 1.2rem;
+.header-content p {
+    margin: 5px 0 0;
+    font-weight: 300;
 }
 
-/* Imagens de fundo difusas */
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.15; /* Opacidade para as imagens de fundo */
-    filter: blur(8px); /* Desfoque */
-    z-index: -1; /* Coloca as imagens atrás do conteúdo */
-}
-
-/* Estilo da seção principal */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
 }
 
-/* Seção introdutória */
-.intro {
-    text-align: center;
-    margin: 3rem 0;
+h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
 }
 
-.intro h2 {
-    font-size: 2.5rem;
-    color: #4CAF50;
-    margin-bottom: 1rem;
-}
-
-/* Seção sobre o curso */
-.course-info {
-    background-color: #eef6e2;
-    padding: 2rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo da lista de universidades */
 .university-list ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
 
 .university-list li {
     background-color: white;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
+    margin-bottom: 20px;
+    padding: 15px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.university-list li:hover {
-    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .university-list h3 {
-    color: #2e7d32;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.university-list p {
-    font-size: 1rem;
+    margin-top: 0;
+    color: #1b5e20;
 }
 
 .university-list a {
     display: inline-block;
-    margin-top: 1rem;
-    color: #4CAF50;
+    margin-top: 10px;
+    color: #2e7d32;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 .university-list a:hover {
-    color: #2e7d32;
+    text-decoration: underline;
 }
 
-/* Estilo das imagens */
 .images-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    margin: 40px 0;
 }
 
-.images-section img {
-    width: 48%;
+.background-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    filter: brightness(0.9);
 }
 
-.images-section img:hover {
-    transform: scale(1.05);
-}
-
-/* Seção de futuro */
 .future {
-    background-color: #f1f8e9;
-    padding: 3rem 1rem;
-    text-align: center;
-    margin-top: 3rem;
+    background-color: #e8f5e9;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
-.future h2 {
-    color: #2e7d32;
-    font-size:
-
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
 
 
 
