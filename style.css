@@ -1,90 +1,176 @@
-/* Estilo geral para o corpo da página */
-body {
-    font-family: Arial, sans-serif;
+/* Resetando margens e padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Estilos para o cabeçalho */
+/* Fonte personalizada */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(45deg, #4caf50, #2e7d32);
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 5rem 1rem;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-/* Container central para conteúdo */
+header p {
+    font-size: 1.2rem;
+}
+
+/* Estilo da seção principal */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Estilo para cada seção */
-section {
-    margin: 2rem 0;
+/* Seção introdutória */
+.intro {
+    text-align: center;
+    margin: 3rem 0;
 }
 
-/* Estilo para os títulos das seções */
-h2 {
+.intro h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Seção sobre o curso */
+.course-info {
+    background-color: #eef6e2;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da lista de universidades */
+.university-list ul {
+    list-style-type: none;
+}
+
+.university-list li {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.university-list li:hover {
+    transform: scale(1.05);
+}
+
+.university-list h3 {
+    color: #2e7d32;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.university-list p {
+    font-size: 1rem;
+}
+
+.university-list a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.university-list a:hover {
     color: #2e7d32;
 }
 
-/* Estilo para parágrafos */
-p {
-    line-height: 1.6;
-}
-
-/* Estilo para a seção de imagens */
+/* Estilo das imagens */
 .images-section {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
 .images-section img {
     width: 48%;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Estilos para o rodapé */
+.images-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de futuro */
+.future {
+    background-color: #f1f8e9;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.future h2 {
+    color: #2e7d32;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo do rodapé */
 footer {
     background-color: #2e7d32;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
+    padding: 1.5rem;
+    position: relative;
     bottom: 0;
+    width: 100%;
+    font-size: 1rem;
 }
 
-/* Estilo para a caixa de informações */
-.info-box {
-    background-color: #e8f5e9;
-    border: 1px solid #4CAF50;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 
-/* Lista de universidades */
-.university-list ul {
-    list-style-type: none;
-    padding: 0;
-}
+    header h1 {
+        font-size: 3rem;
+    }
 
-.university-list li {
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    background-color: #e8f5e9;
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .university-list li {
+        padding: 1rem;
+    }
+
+    .images-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .images-section img {
+        width: 100%;
+    }
 }
