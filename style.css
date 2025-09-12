@@ -42,7 +42,7 @@ header p {
     height: 100%;
     background-size: cover;
     background-position: center;
-    opacity: 0.2; /* Opacidade para as imagens de fundo */
+    opacity: 0.15; /* Opacidade para as imagens de fundo */
     filter: blur(8px); /* Desfoque */
     z-index: -1; /* Coloca as imagens atrás do conteúdo */
 }
@@ -146,4 +146,9 @@ header p {
 }
 
 .future h2 {
-    color: #2e7d
+    color: #2e7d32;
+    font-size:
+
+
+
+
